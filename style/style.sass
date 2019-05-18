@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap')
+
+@font-face
+	font-family: "JosefinSans"
+	src: url('../fonts/JosefinSans-Regular.ttf'),
+	src: url('../fonts/JosefinSansRegular.eot'),
+	src: url('../fonts/JosefinSansRegular.woff'),
+	src: url('../fonts/JosefinSansRegular.woff2')
+
+@font-face 
+	font-family: "JosefinSans-Bold"
+	src: url('../fonts/JosefinSans-Bold.ttf'),
+	src: url('../fonts/JosefinSans-Bold.eot'),
+	src: url('../fonts/JosefinSans-Bold.woff'),
+	src: url('../fonts/JosefinSans-Bold.woff2')
+
+
+@font-face 
+	font-family: "Aleo"
+	src: url('../fonts/aleo-regular-webfont.ttf'),
+	src: url('../fonts/aleo-regular-webfont.eot'),
+	src: url('../fonts/aleo-regular-webfont.woff'),
+	src: url('../fonts/aleo-regular-webfont.woff2')
+
+
+body
+	box-sizing: border-box
+
+$accent-color: #5474fd
+
+.left-side
+	width: 50%
+
+.right-side
+	width: 50%
+
+.header-wrapper 
+	min-height: calc(100vh - 80px)
+	background-image: url(../img/header-background.png)
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	align-content: center
+	background-size: cover
+
+.container 
+	color: #fff
+	width: 1110px
+	margin: 0 auto
+
+.header-name 
+	padding-bottom: 18px
+	color: #fff
+	font-size: 48px
+	text-transform: uppercase
+	text-align: center
+	font-family: JosefinSans-Bold
+
+.header-text
+	padding-bottom: 50px
+	text-align: center
+	font-family: JosefinSans
+	font-size: 22px
+
+.search-container 
+	width: 650px
+	background-color: #fff 
+	margin: 0 auto
+	padding: 2px 2px 2px 0
+	display: flex
+	
+
+.search-container
+	position: relative
+	&::after
+		content: ""
+		background-image: url(../img/search-icon.png)
+		background-repeat: no-repeat
+		width: 22px
+		height: 22px
+		position: absolute
+		vertical-align: middle
+		right: 15px
+		top: 18px
+
+
+.search-field
+	width: inherit
+	text-align: center
+	border: none
+	&:placeholder
+		font-family: JosefinSans
+		font-size: 14px
+		color: #999999
+
+.search-btn
+	width: 145px
+	height: 55px
+	border: none
+	background-color: $accent-color
+	color: #fff
+	font-family: Aleo
+	text-transform: uppercase
+	font-size: 14px
+	text-align: left
+	padding-left: 20px
+		
+.go-to
+	text-decoration: none
+	color: #fff
+
+.scroll
+	text-align: center
+	padding-top: 120px
+	text-decoration: none
+
+.scroll-text 
+	padding-bottom: 15px
+	font-size: 14px
+	font-family: JosefinSans
+
+.container-header 
+	width: 1110px
+	color: #fff
+	display: inline-flex
+	justify-content: space-between
+	text-transform: uppercase
+
+.header-down_menu
+	background-color: $accent-color
+	height: 80px
+	display: flex
+	justify-content: space-around
+	align-items: center
+	align-content: center
+
+.header-down_menu__title
+	font-size: 24px
+	font-family: JosefinSans-Bold
+
+
+.header-down_menu--list
+	display: inline-flex
+	font-size: 14px
+	font-family: Aleo
+
+.header-right--side
+	width: 50%
+	justify-content: space-around
+
+// ==============main block==============
+
+.main-black
+	background-image: url(../img/choose-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+
+.main-black-title
+	padding-top: 205px
+	padding-bottom: 63px
+	font-size: 36px
+	font-family: Aleo
+
+.main-black-title
+	font-size: 36px
+	color: #fff
+
+.main-black--text
+	padding-bottom: 39px
+	font-size: 16px
+	color: #e8e8e8
+	font-family: JosefinSans
+
+.main-black--button
+	width: 225px
+	height: 58px
+	background-color: $accent-color
+	border: none
+	color: #fff
+	font-family: Aleo
+	text-transform: uppercase
+	background: rgb(73,107,254)
+	background: linear-gradient(45deg, rgba(73,107,254,1) 35%, rgba(84,116,253,1) 35%, rgba(84,116,253,1) 35%)
+
+.main-black-content
+	display: inline-flex
+
+.main-black--column
+	padding-bottom: 133px
+
+.main-black-small--image
+	padding-top: 113px
+	padding-left: 47px
+
+.main-black-small--second-image
+	padding-left: 37%
+	padding-top: 5px
+
+.places
+	background-color: #333333
+
+.places-card
+	padding-top: 98px
+	padding-bottom: 120px
+	width: 100%
+	display: inline-flex
+	position: relative
+	text-align: center
+
+.places-container
+	width: 33%
+
+.places-container--text
+	font-size: 36px
+	font-family: Aleo
+
+.places-image
+	padding-bottom: 29px
+
+.arc
+	&:before
+		content: ""
+		background-image: url(../img/arc.png)
+		background-repeat: no-repeat
+		width: 386px
+		height: 65px
+		position: absolute
+		left: 169px
+		top: 32px
+	&:after
+		content: ""
+		background-image: url(../img/arc.png)
+		background-repeat: no-repeat
+		width: 386px
+		height: 65px
+		position: absolute
+		top: 32px
+		right: 190px
+		
+.hotels
+	background-image: url(../img/hotel.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	padding-top: 225px
+	padding-bottom: 100px
+
+.hotels-column
+	width: 540px
+	height: 370px
+	background-color: rgba(0, 0, 0, 0.7)
+
+.hotels-column--container
+	padding: 57px 15px 30px 51px
+
+.hotels-country
+	padding-bottom: 30px
+	font-size: 20px
+	font-family: JosefinSans
+
+.hotels-name
+	padding-bottom: 31px
+	font-size: 20px
+	font-family: JosefinSans
+
+.hotels-about
+	padding-bottom: 47px
+	font-size: 16px
+	line-height: 26px
+	font-family: JosefinSans
+
+.hotels-btn
+	width: 217px
+	height: 60px
+	background-color: $accent-color
+	border: none
+	text-transform: uppercase
+	color: #fff
+	font-size: 16px
+	font-family: Aleo
+	background: rgb(73,107,254)
+	background: linear-gradient(45deg, rgba(73,107,254,1) 35%, rgba(84,116,253,1) 35%, rgba(84,116,253,1) 35%)
+
+.mount
+	background-image: url(../img/rocks.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	padding-top: 225px
+	padding-bottom: 100px
+	display: flex
+
+.mount-column
+	width: 540px
+	height: 370px
+	background-color: rgba(0, 0, 0, 0.7)
+	float: right
+
+
+.mount-column--container
+	padding: 57px 15px 30px 51px
+
+.mount-country
+	padding-bottom: 30px
+	font-size: 20px
+	font-family: JosefinSans
+
+.mount-name
+	padding-bottom: 31px
+	font-size: 20px
+	font-family: JosefinSans
+
+.mount-about
+	padding-bottom: 47px
+	font-size: 16px
+	line-height: 26px
+	font-family: JosefinSans
+
+.mount-btn
+	width: 217px
+	height: 60px
+	background-color: $accent-color
+	border: none
+	text-transform: uppercase
+	color: #fff
+	font-family: Aleo
+	background: rgb(73,107,254)
+	background: linear-gradient(45deg, rgba(73,107,254,1) 35%, rgba(84,116,253,1) 35%, rgba(84,116,253,1) 35%)
+
+.review
+	background-image: url(../img/big-tourist.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	padding-bottom: 200px
+
+.review-name
+	text-align: center
+	padding-top: 117px
+	padding-bottom: 100px
+	font-size: 36px
+	font-family: Aleo
+
+.review-small--image
+	width: 445px
+
+.review-content
+	display: inline-flex
+	background-color: #333333
+	padding-right: 47px
+
+.review-small--right
+	padding-left: 60px
+
+.fa-quote-left
+	position: relative
+	top: -10px
+	padding-right: 5px
+	color: $accent-color
+
+.review-small--title
+	padding-top: 50px
+	padding-bottom: 34px
+	text-transform: uppercase
+	font-size: 20px
+	font-family: JosefinSans
+
+.review-small-text
+	line-height: 26px
+	padding-bottom: 55px
+	font-size: 16px
+	font-family: JosefinSans
+
+// =================footer=============
+
+.footer	
+	padding-top: 121px
+	padding-bottom: 52px
+	background-color: #232323
+	margin: 0 auto
+	text-align: center
+
+.footer-title
+	padding-bottom: 15px
+	font-size: 24px
+	text-transform: uppercase
+	font-family: JosefinSans
+
+.footer-text
+	padding-bottom: 32px
+	font-size: 16px
+	font-family: JosefinSans
+
+.footer-icons
+	text-align: center
+	margin: 0 auto
+	height: 16px
+	width: 16px
+	display: contents
+
+.footer-tube, .footer-linked, .footer-tw, .footer-pine, .footer-fb
+	display: inline-block 
+
+	padding: 0 15px
+	color: #fff
+	&:hover
+		color: $accent-color
+		cursor: pointer
+		
